@@ -1,0 +1,143 @@
+{
+  "reviewed": "2026-10-04",
+  "brokers": [
+    {
+      "id": "Futu",
+      "name": "富途香港 / 富途牛牛",
+      "rules": [
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "futuhk.com",
+          "source": "https://www.futuhk.com/hans",
+          "reason": "富途香港官网本身或页面直接引用的券商服务域名"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "futunn.com",
+          "source": "https://www.futuhk.com/hans",
+          "reason": "富途香港官网本身或页面直接引用的券商服务域名"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "futufin.com",
+          "source": "https://www.futuhk.com/hans",
+          "reason": "富途香港官网本身或页面直接引用的券商服务域名"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "cdn.futustatic.com",
+          "source": "https://www.futuhk.com/hans",
+          "reason": "官网直接引用的静态资源主机"
+        }
+      ]
+    },
+    {
+      "id": "Longbridge",
+      "name": "长桥香港 / LongPort",
+      "rules": [
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "longbridge.com",
+          "source": "https://longbridge.com/hk/zh-CN",
+          "reason": "长桥官网及其 OpenAPI 服务"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "longportapp.com",
+          "source": "https://play.google.com/store/apps/details?id=global.longport.app.android",
+          "reason": "LongPort 官方应用商店页面列出的官网"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "lbkrs.com",
+          "source": "https://longbridge.com/hk/zh-CN",
+          "reason": "长桥官网引用 assets.lbkrs.com 和 pub.lbkrs.com"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "assets.lbctrl.com",
+          "source": "https://longbridge.com/hk/zh-CN",
+          "reason": "长桥官网直接引用的静态资源主机"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "assets.wbrks.com",
+          "source": "https://longbridge.com/hk/zh-CN",
+          "reason": "长桥官网直接引用的静态资源主机"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "openapi-quote.longbridge.cn",
+          "source": "https://open.longbridge.com/docs/socket/hosts",
+          "reason": "官方 Socket 文档列出的中国内地行情/交易地址"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "openapi-trade.longbridge.cn",
+          "source": "https://open.longbridge.com/docs/socket/hosts",
+          "reason": "官方 Socket 文档列出的中国内地行情/交易地址"
+        }
+      ]
+    },
+    {
+      "id": "Tiger",
+      "name": "老虎证券香港",
+      "rules": [
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "itiger.com",
+          "source": "https://www.itiger.com/hk/hans/",
+          "reason": "老虎香港官方网站"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "tigerbrokers.com.hk",
+          "source": "https://www-web.itiger.com/hk/inst",
+          "reason": "香港官网机构业务页面列出的账户登录域名"
+        }
+      ]
+    },
+    {
+      "id": "Huasheng",
+      "name": "华盛证券 / 华盛通",
+      "rules": [
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "hstong.com",
+          "source": "https://www.hstong.com/hk/about",
+          "reason": "华盛通官方企业介绍页面"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "vbkr.com",
+          "source": "https://www.vbkr.com/promotions/open-account-en",
+          "reason": "华盛证券官方网站"
+        }
+      ]
+    },
+    {
+      "id": "IBKR",
+      "name": "盈透证券香港",
+      "rules": [
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "interactivebrokers.com.hk",
+          "source": "https://www.interactivebrokers.com.hk/cn/",
+          "reason": "盈透香港官网本身或页面直接链接的集团服务域名"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "interactivebrokers.com",
+          "source": "https://www.interactivebrokers.com.hk/cn/",
+          "reason": "盈透香港官网本身或页面直接链接的集团服务域名"
+        },
+        {
+          "type": "DOMAIN-SUFFIX",
+          "host": "ibkr.com",
+          "source": "https://www.interactivebrokers.com.hk/cn/",
+          "reason": "盈透香港官网本身或页面直接链接的集团服务域名"
+        }
+      ]
+    }
+  ]
+}

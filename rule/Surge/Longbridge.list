@@ -1,0 +1,9 @@
+# 长桥香港 / LongPort | Reviewed: 2026-10-04
+# Domain-only routing; not a complete endpoint inventory.
+DOMAIN-SUFFIX,longbridge.com
+DOMAIN-SUFFIX,longportapp.com
+DOMAIN-SUFFIX,lbkrs.com
+DOMAIN,assets.lbctrl.com
+DOMAIN,assets.wbrks.com
+DOMAIN,openapi-quote.longbridge.cn
+DOMAIN,openapi-trade.longbridge.cn
