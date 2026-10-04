@@ -76,6 +76,36 @@
           "host": "openapi-trade.longbridge.cn",
           "source": "https://open.longbridge.com/docs/socket/hosts",
           "reason": "官方 Socket 文档列出的中国内地行情/交易地址"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "api-status.longbridgeapp.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户截图中 Longbridge Pro 访问的状态服务主机；仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "event-tracking.lbctrl.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户截图中 Longbridge Pro Helper 访问的事件遥测主机；仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "download.wbrks.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户截图中 Longbridge Pro Helper 访问的下载主机；仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "lb-desktop.lbctrl.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户截图中 Longbridge Pro 访问的桌面服务主机；仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "o333560.ingest.us.sentry.io",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户要求收录的 Longbridge Pro Helper 第三方 Sentry 遥测主机；非券商自有域名，不匹配其他 Sentry 主机"
         }
       ]
     },
