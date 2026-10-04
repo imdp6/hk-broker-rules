@@ -112,6 +112,18 @@
           "host": "lb-hk-desktop.oss-cn-hongkong.aliyuncs.com",
           "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
           "reason": "2026-10-04 Surge Dashboard 显示由 Longbridge Pro 发起；用户要求补充，精确匹配该 OSS 主机，不匹配其他阿里云租户"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "sg.app.wbrks.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "2026-10-04 21:31:41、21:33:06 Surge Dashboard 显示由 Longbridge Pro Helper 发起；用户要求按实测补充，仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "papertrading.app.wbrks.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "2026-10-04 21:31:44 Surge Dashboard 显示由 Longbridge Pro Helper 发起；用户要求按实测补充，仅精确匹配"
         }
       ]
     },
