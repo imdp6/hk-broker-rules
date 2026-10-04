@@ -23,6 +23,7 @@
 | lb-hk-desktop.oss-cn-hongkong.aliyuncs.com | Dashboard 后续观察补充，精确 DOMAIN |
 | sg.app.wbrks.com | Dashboard 后续观察补充，精确 DOMAIN |
 | papertrading.app.wbrks.com | Dashboard 后续观察补充，精确 DOMAIN |
+| longbridge.app.wbrks.com | 手机截图补充，精确 DOMAIN |
 
 规则不包含端口后缀；截图中的 :443 不属于域名。
 Sentry 使用精确主机匹配，不添加 sentry.io、ingest.us.sentry.io 等共享后缀。
@@ -37,3 +38,9 @@ Longbridge Pro Helper 于 21:31:41、21:33:06 访问 `sg.app.wbrks.com:443`，
 同批出现的 `assets.lbkrs.com`、`m.lbkrs.com`、`event-tracking.lbkrs.com`、
 `performance-data.lbkrs.com` 已由 `lbkrs.com` 后缀规则覆盖。
 这两条新增规则收录于 `v1.0.3`，旧版本 `v1.0.2` 不包含；尚未在手机端验证。
+
+手机补充：用户提供的 `IMG_6055.PNG` 显示 2026-10-04 21:54:19 请求
+`longbridge.app.wbrks.com:443`，状态已完成，策略 DIRECT。用户明确要求
+将该主机加入长桥规则，收录于 `v1.0.4`。截图未显示应用归属及命中规则，
+不能据此确认此前直连的全部原因；新增规则尚未验证手机实际命中。
+不扩展 `wbrks.com` 后缀，也不收录同屏无法确认归属的第三方主机。

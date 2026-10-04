@@ -124,6 +124,12 @@
           "host": "papertrading.app.wbrks.com",
           "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
           "reason": "2026-10-04 21:31:44 Surge Dashboard 显示由 Longbridge Pro Helper 发起；用户要求按实测补充，仅精确匹配"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "longbridge.app.wbrks.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "用户提供的 2026-10-04 手机 Surge 请求截图显示该主机走 DIRECT，用户明确要求补充；仅精确匹配，截图未显示应用归属"
         }
       ]
     },

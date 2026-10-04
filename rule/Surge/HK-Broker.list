@@ -1,5 +1,5 @@
 # HK Broker | Reviewed: 2026-10-04
-# Rules: 26 | Domain-only
+# Rules: 27 | Domain-only
 
 # 富途香港 / 富途牛牛
 DOMAIN-SUFFIX,futuhk.com
@@ -23,6 +23,7 @@ DOMAIN,o333560.ingest.us.sentry.io
 DOMAIN,lb-hk-desktop.oss-cn-hongkong.aliyuncs.com
 DOMAIN,sg.app.wbrks.com
 DOMAIN,papertrading.app.wbrks.com
+DOMAIN,longbridge.app.wbrks.com
 
 # 老虎证券香港
 DOMAIN-SUFFIX,itiger.com
