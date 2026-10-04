@@ -130,6 +130,12 @@
           "host": "longbridge.app.wbrks.com",
           "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
           "reason": "用户提供的 2026-10-04 手机 Surge 请求截图显示该主机走 DIRECT，用户明确要求补充；仅精确匹配，截图未显示应用归属"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "pub.lbctrl.com",
+          "source": "https://developers.longportwhale.com/en/trading-api/v3/account/list",
+          "reason": "长桥 Whale 官方账户列表文档引用该主机托管账户图标和图片；2026-10-04 用户反馈手机请求直连并明确要求收录，仅精确匹配"
         }
       ]
     },

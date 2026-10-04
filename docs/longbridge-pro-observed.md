@@ -24,6 +24,7 @@
 | sg.app.wbrks.com | Dashboard 后续观察补充，精确 DOMAIN |
 | papertrading.app.wbrks.com | Dashboard 后续观察补充，精确 DOMAIN |
 | longbridge.app.wbrks.com | 手机截图补充，精确 DOMAIN |
+| pub.lbctrl.com | 官方文档及用户手机直连反馈补充，精确 DOMAIN |
 
 规则不包含端口后缀；截图中的 :443 不属于域名。
 Sentry 使用精确主机匹配，不添加 sentry.io、ingest.us.sentry.io 等共享后缀。
@@ -44,3 +45,8 @@ Longbridge Pro Helper 于 21:31:41、21:33:06 访问 `sg.app.wbrks.com:443`，
 将该主机加入长桥规则，收录于 `v1.0.4`。截图未显示应用归属及命中规则，
 不能据此确认此前直连的全部原因；新增规则尚未验证手机实际命中。
 不扩展 `wbrks.com` 后缀，也不收录同屏无法确认归属的第三方主机。
+
+手机后续补充：2026-10-04 用户反馈 `pub.lbctrl.com:443` 请求直连并要求收录。
+[长桥 Whale 官方账户列表文档](https://developers.longportwhale.com/en/trading-api/v3/account/list)
+在账户图标及图片字段中引用该主机，证明官方使用它托管资源；不能据此确定
+用户此次请求的具体内容。精确 DOMAIN 收录于 `v1.0.5`，尚未验证手机更新后的实际命中。
