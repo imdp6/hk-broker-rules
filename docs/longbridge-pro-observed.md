@@ -20,7 +20,10 @@
 | ws-gl.lbkrs.com | 已有 lbkrs.com 后缀 |
 | admin-ws.lbkrs.com | 已有 lbkrs.com 后缀 |
 | performance-data.lbkrs.com | 已有 lbkrs.com 后缀 |
+| lb-hk-desktop.oss-cn-hongkong.aliyuncs.com | Dashboard 后续观察补充，精确 DOMAIN |
 
 规则不包含端口后缀；截图中的 :443 不属于域名。
 Sentry 使用精确主机匹配，不添加 sentry.io、ingest.us.sentry.io 等共享后缀。
 新增匹配只改变出口选择，不启用、关闭或拦截应用遥测。
+
+后续补充：2026-10-04 通过 Surge Dashboard 核对到上述 OSS 主机由 Longbridge Pro 发起。用户明确要求将其加入规则，以便手机端按域名选择香港出口。桌面记录不能证明手机端全部服务已覆盖。

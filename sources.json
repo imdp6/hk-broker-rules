@@ -106,6 +106,12 @@
           "host": "o333560.ingest.us.sentry.io",
           "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
           "reason": "用户要求收录的 Longbridge Pro Helper 第三方 Sentry 遥测主机；非券商自有域名，不匹配其他 Sentry 主机"
+        },
+        {
+          "type": "DOMAIN",
+          "host": "lb-hk-desktop.oss-cn-hongkong.aliyuncs.com",
+          "source": "https://github.com/imdp6/hk-broker-rules/blob/main/docs/longbridge-pro-observed.md",
+          "reason": "2026-10-04 Surge Dashboard 显示由 Longbridge Pro 发起；用户要求补充，精确匹配该 OSS 主机，不匹配其他阿里云租户"
         }
       ]
     },

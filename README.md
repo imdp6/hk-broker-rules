@@ -1,7 +1,7 @@
 # 香港券商 Surge 分流规则
 
 以香港券商用户为主的保守域名规则，初版审查日期：2026-10-04。
-覆盖富途、长桥、老虎、华盛及盈透的已核实官网和部分服务域名，共 23 条。另含用户实测要求补充的长桥桌面服务及一个精确匹配的 Sentry 遥测主机。
+覆盖富途、长桥、老虎、华盛及盈透的已核实官网和部分服务域名，共 24 条。另含用户实测要求补充的长桥桌面服务及一个精确匹配的 Sentry 遥测主机。
 
 这些规则用于选择网络出口，不是防钓鱼白名单，也不证明某个域名下所有内容安全。
 域名后缀规则会匹配该域名及全部子域名；集团域名也可能涵盖香港以外的业务。
@@ -15,10 +15,10 @@
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/imdp6/hk-broker-rules/v1.0.1/rule/Surge/HK-Broker.list,香港券商,update-interval=-1
+RULE-SET,https://raw.githubusercontent.com/imdp6/hk-broker-rules/v1.0.2/rule/Surge/HK-Broker.list,香港券商,update-interval=-1
 ```
 
-固定提交 SHA 比版本标签更严格（标签可移动）：将 URL 中的 `v1.0.1` 替换为你审查过的完整提交 SHA。
+固定提交 SHA 比版本标签更严格（标签可移动）：将 URL 中的 `v1.0.2` 替换为你审查过的完整提交 SHA。
 Surge 会下载并缓存规则；上述配置关闭规则文件的自动更新。
 
 若希望跟随仓库更新，可改用以下订阅：
@@ -28,6 +28,21 @@ RULE-SET,https://raw.githubusercontent.com/imdp6/hk-broker-rules/main/rule/Surge
 ```
 
 Surge 外部规则默认每 24 小时重新下载，采用动态订阅即信任未来的仓库修改。
+
+## 手机 Surge：长桥走香港
+
+手机端使用域名规则，不依赖 macOS 的 `PROCESS-NAME`。只需长桥时，在 `[Rule]` 中加入：
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/imdp6/hk-broker-rules/v1.0.2/rule/Surge/Longbridge.list,香港,update-interval=-1
+```
+
+`香港` 替换为实际的香港节点或策略组名。该组应只选择香港出口，避免自动切到其他地区或 `DIRECT`。
+启用规则模式，把此行放在通用直连/代理规则、旧券商合集及 `FINAL` 前；现有安全拦截规则保留在前。
+更新配置后重新建立长桥连接，在手机 Surge 请求记录中核对命中本订阅及最终香港节点。
+
+`Longbridge.list` 同时包含官网、API、资源及用户实测补充项，覆盖已收录域名的手机请求。
+当前实测来自桌面，未验证手机全部域名及裸 IP；未收录连接仍按后续规则处理，因此不保证所有长桥流量都走香港。
 
 ## 单独订阅
 
